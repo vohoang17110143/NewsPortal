@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsData", "NewsData\NewsData.csproj", "{705E40BD-E29A-4FFA-86DA-8DFA3A5A2EC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsApplication", "NewsApplication\NewsApplication.csproj", "{3D480308-5356-4CCF-AF35-8B912C61694D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,14 @@ Global
 		{12749DB6-296D-4EB5-83C6-3D61D8A53594}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12749DB6-296D-4EB5-83C6-3D61D8A53594}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12749DB6-296D-4EB5-83C6-3D61D8A53594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{705E40BD-E29A-4FFA-86DA-8DFA3A5A2EC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{705E40BD-E29A-4FFA-86DA-8DFA3A5A2EC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{705E40BD-E29A-4FFA-86DA-8DFA3A5A2EC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{705E40BD-E29A-4FFA-86DA-8DFA3A5A2EC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D480308-5356-4CCF-AF35-8B912C61694D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D480308-5356-4CCF-AF35-8B912C61694D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D480308-5356-4CCF-AF35-8B912C61694D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D480308-5356-4CCF-AF35-8B912C61694D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
