@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NewsData.Configurations;
 using NewsData.Entities;
+using NewsData.Extentions;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -32,6 +33,8 @@ namespace NewsData.EF
             modelBuilder.ApplyConfiguration(new TransactionConfiguration());
 
             //base.OnModelCreating(modelBuilder);
+            modelBuilder.Seed();
+          
         }
 
         public DbSet<Product> Products { get; set; }
