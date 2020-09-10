@@ -10,9 +10,8 @@ using Microsoft.EntityFrameworkCore;
 using System.IO;
 using System.Linq;
 using System.Net.Http.Headers;
-using NewsViewModel.Catalog.Products.Dtos.Manage;
+using NewsViewModel.Catalog.Products;
 using News.Utilities.Exceptions;
-using NewsViewModel.Catalog.Products.Dtos;
 using NewsViewModel.Catalog.Common;
 using Microsoft.AspNetCore.Http;
 using NewsApplication.Catalog.Common;
@@ -107,19 +106,19 @@ namespace NewsApplication.Catalog.Product
             throw new NotImplementedException();
         }
 
-        public async Task<PageResult<ProductViewModel>> GetAllPaging(NewsViewModel.Catalog.Products.Dtos.Manage.GetProductPagingRequest request)
+        public async Task<PageResult<ProductViewModel>> GetAllPaging(GetProductPagingRequest request)
         {
             //1 select join
             var query = from p in _context.Products
                         join pt in _context.ProductTranslations on p.id equals pt.ProductId
                         join pic in _context.ProductInCategories on p.id equals pic.ProductId
                         join c in _context.Categories on pic.CategoryId equals c.ID
-                        select new { p,pt,pic};
+                        select new { p, pt, pic };
             //2 filter
             if (!string.IsNullOrEmpty(request.Keyword))
                 query = query.Where(x => x.pt.Name.Contains(request.Keyword));
 
-            if(request.CategoryId.Count > 0)
+            if (request.CategoryId.Count > 0)
             {
                 query = query.Where(p => request.CategoryId.Contains(p.pic.CategoryId));
             }
@@ -155,10 +154,7 @@ namespace NewsApplication.Catalog.Product
             };
 
             return pageResult;
-                       
         }
-
-       
 
         public Task<List<ProductImageViewModel>> GetListImage(int productId)
         {

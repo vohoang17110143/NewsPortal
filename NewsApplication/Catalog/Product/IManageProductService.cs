@@ -1,8 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Http;
 using NewsViewModel.Catalog.Common;
-using NewsViewModel.Catalog.Products.Dtos;
-using NewsViewModel.Catalog.Products.Dtos.Manage;
+using NewsViewModel.Catalog.Products;
 
 using System;
 using System.Collections.Generic;

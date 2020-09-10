@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\News.Utilities\News.Utilities.csproj" />
+    <ProjectReference Include="..\NewsApplication\NewsApplication.csproj" />
+    <ProjectReference Include="..\NewsData\NewsData.csproj" />
+    <ProjectReference Include="..\NewsViewModel\NewsViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

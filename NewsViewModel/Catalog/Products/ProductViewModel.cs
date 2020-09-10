@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NewsViewModel.Catalog.Products.Dtos
+namespace NewsViewModel.Catalog.Products
 {
     public class ProductViewModel
     {

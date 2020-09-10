@@ -1,7 +1,6 @@
 ﻿
 using NewsViewModel.Catalog.Common;
-using NewsViewModel.Catalog.Products.Dtos;
-using NewsViewModel.Catalog.Products.Dtos.Public;
+using NewsViewModel.Catalog.Products;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,6 +10,8 @@ namespace NewsApplication.Catalog
 {
     public interface IPublicProductService
     {
-       Task< PageResult<ProductViewModel>> GetAllByCategoryId(GetProductPagingRequest request);
+       Task< PageResult<ProductViewModel>> GetAllByCategoryId(GetPublicProductPagingRequest request);
+
+        Task<List<ProductViewModel>> GetAll();
     }
 }
