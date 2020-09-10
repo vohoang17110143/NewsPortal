@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NewsApplication.Dtos
+namespace NewsViewModel.Catalog.Common
 {
     public class PagingRequestBase
     {

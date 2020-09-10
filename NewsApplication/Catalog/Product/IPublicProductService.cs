@@ -1,6 +1,7 @@
-﻿using NewsApplication.Catalog.Product.Dtos;
-using NewsApplication.Catalog.Product.Dtos.Public;
-using NewsApplication.Dtos;
+﻿
+using NewsViewModel.Catalog.Common;
+using NewsViewModel.Catalog.Products.Dtos;
+using NewsViewModel.Catalog.Products.Dtos.Public;
 using System;
 using System.Collections.Generic;
 using System.Text;

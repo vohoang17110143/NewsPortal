@@ -1,6 +1,9 @@
-﻿using NewsApplication.Catalog.Product.Dtos;
-using NewsApplication.Catalog.Product.Dtos.Manage;
-using NewsApplication.Dtos;
+﻿
+using Microsoft.AspNetCore.Http;
+using NewsViewModel.Catalog.Common;
+using NewsViewModel.Catalog.Products.Dtos;
+using NewsViewModel.Catalog.Products.Dtos.Manage;
+
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace NewsApplication.Catalog.Product
 {
-   public interface IManageProductService
+    public interface IManageProductService
     {
         Task<int> Create(ProductCreateRequest request);
 
@@ -27,5 +30,13 @@ namespace NewsApplication.Catalog.Product
         Task<List<ProductViewModel>> GetAll();
 
         Task<PageResult<ProductViewModel>> GetAllPaging(GetProductPagingRequest request);
+
+        Task<int> AddImages(int productId, List<IFormFile> files);
+
+        Task<int> RemoveImages(int imageId);
+
+        Task<int> UpdateImage(int imageId, string caption, bool isDefault);
+
+        Task<List<ProductImageViewModel>> GetListImage(int productId);
     }
 }

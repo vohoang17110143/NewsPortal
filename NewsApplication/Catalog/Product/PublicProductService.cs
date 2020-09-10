@@ -1,6 +1,4 @@
-﻿using NewsApplication.Catalog.Product.Dtos;
-using NewsApplication.Catalog.Product.Dtos.Public;
-using NewsApplication.Dtos;
+﻿
 using NewsData.EF;
 using System;
 using System.Collections.Generic;
@@ -8,6 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using NewsViewModel.Catalog.Products.Dtos;
+using NewsViewModel.Catalog.Common;
+using NewsViewModel.Catalog.Products.Dtos.Public;
 
 namespace NewsApplication.Catalog.Product
 {

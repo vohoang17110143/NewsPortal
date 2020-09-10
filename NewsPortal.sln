@@ -14,7 +14,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsData", "NewsData\NewsDa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsApplication", "NewsApplication\NewsApplication.csproj", "{3D480308-5356-4CCF-AF35-8B912C61694D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "News.Utilities", "News.Utilities\News.Utilities.csproj", "{B78DEC6B-EE13-47BB-8E96-10FD46134A25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "News.Utilities", "News.Utilities\News.Utilities.csproj", "{B78DEC6B-EE13-47BB-8E96-10FD46134A25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsViewModel", "NewsViewModel\NewsViewModel.csproj", "{F859D4E7-15CF-414A-A823-31772F430979}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{B78DEC6B-EE13-47BB-8E96-10FD46134A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B78DEC6B-EE13-47BB-8E96-10FD46134A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B78DEC6B-EE13-47BB-8E96-10FD46134A25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F859D4E7-15CF-414A-A823-31772F430979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F859D4E7-15CF-414A-A823-31772F430979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F859D4E7-15CF-414A-A823-31772F430979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F859D4E7-15CF-414A-A823-31772F430979}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
